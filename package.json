@@ -1,0 +1,16 @@
+{
+  "name": "holochain-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && find dna-tmp -name index.js -exec sh -c 'parcel build --no-source-maps --out-dir dna/$(basename $(dirname {})) {}' \\; && cpx dna-src/**/*.json dna/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "parcel": "^1.9.7",
+    "typescript": "^2.9.2"
+  }
+}

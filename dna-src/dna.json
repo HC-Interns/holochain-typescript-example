@@ -1,0 +1,30 @@
+{
+    "Version": 1,
+    "UUID": "00000000-0000-0000-0000-000000000000",
+    "Name": "holochain-typescript",
+    "Properties": {
+        "description": "second iteration of holochain real time pong",
+        "language": "en"
+    },
+    "PropertiesSchemaFile": "properties_schema.json",
+    "BasedOn": "",
+    "RequiresVersion": 26,
+    "DHTConfig": {
+        "HashType": "sha2-256",
+        "RedundancyFactor": 0
+    },
+    "Zomes": [
+        {
+            "Name": "zome1",
+            "Description": "typescript testing zome",
+            "CodeFile": "index.js",
+            "RibosomeType": "js",
+            "BridgeFuncs": null,
+            "Config": {
+              "ErrorHandling" : "throwErrors"
+            },
+            "Entries": [],
+            "Functions": []
+        }
+    ]
+}
