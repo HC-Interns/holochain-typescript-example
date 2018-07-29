@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && find dna-tmp -name index.js -exec sh -c 'parcel build --no-source-maps --out-dir dna/$(basename $(dirname {})) {}' \\; && cpx dna-src/**/*.json dna/"
+    "build": "tsc && find dna-tmp -name index.js -exec sh -c 'parcel build --out-dir dna/$(basename $(dirname {})) {} --no-source-maps --no-minify' \\; && cpx dna-src/**/*.json dna/"
   },
   "author": "",
   "license": "ISC",
